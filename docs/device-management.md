@@ -45,3 +45,25 @@ sidebar_position: 5
 > 仅当此设备在线并且有配置 Steam 游玩显示的时候才会出现
 
 > 如果音乐不存在的话，这部分会自动移位到左侧，即使用音乐的位置展示
+
+### 自定义状态配置
+
+![picture 4](/articles/94cfb01f8c9e8ee3152731d83265a37f6ad76ceb8ac99e7492d6ab0f9b15947c.png)  
+
+#### 离线状态 / 锁屏状态
+
+如果设备不在线，但是想显示出来，可以使用此功能
+
+一般启动后，如果设备并没有及时上报相关数据，且相关功能启用了，将会使用此时设置的状态
+
+![picture 5](/articles/c2467227be87fb6827422883e9959ec7e9e1842bdb9c5c0271e893492ee782f9.png)  
+
+如果是锁屏的话，则 Icon 会变成<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hourglass-icon lucide-hourglass"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></svg>
+
+:::tip
+
+锁屏的处理只做了两种：Win 11 下的 lockAPP 和 MacOS 的 LockWindows
+
+其他的情况没有做处理，如果发现您的系统不工作，可以发issue
+
+:::
