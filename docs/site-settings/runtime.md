@@ -16,8 +16,7 @@ sidebar_position: 4
 
 开启后，前台支持的卡片会跟随鼠标产生轻微倾斜效果。
 
-这个主要是视觉反馈，不影响活动数据本身。  
-如果你想让公开页更有动态感，可以打开；如果希望页面更稳、更少动效，可以关闭。
+如果你想让公开页更有动态感，可以打开；如果希望页面更少动效，可以关闭。
 
 ### 启用移动端陀螺仪倾斜
 
@@ -37,6 +36,8 @@ sidebar_position: 4
 
 ### 在线强调色
 
+![picture 2](/articles/d404646e6e23ef1f1b7f01624d15ceae922da36fb1bce4ada99e9c28f4d55c86.png)  
+
 用于指定在线状态的强调色。
 
 一般会影响在线圆点、在线状态提示，以及部分状态卡片的强调色。  
@@ -51,18 +52,26 @@ sidebar_position: 4
 
 ### 在悬停卡片中显示媒体来源
 
+![picture 4](/articles/9107776896f7c1c8ebac9d2abc4bc67a36f33f12b43a5218aa74dedd76f26e4b.png)  
+
 开启后，鼠标悬停到音乐信息上时，会在弹出的详情卡里显示来源，例如 Spotify、Apple Music、系统媒体等。
 
 关闭后，媒体内容仍然可以显示，但来源信息会被隐藏。
 
 ### 在悬停卡片中显示媒体封面图
 
+![picture 5](/articles/35253cd5f95cdcfb006a9029f899dc824518e6be996e472234a75e3b0268c7d4.png)  
+
 开启后，悬停媒体信息时会显示封面图。
 
 这会让音乐展示更完整，但也会保存和读取更多图片数据。  
 如果部署在 Serverless 平台，或者数据库空间比较紧张，不建议开得太激进。
 
+> 请记得 客户端 也需要开启上报，不然没内容的哦
+
 ### 上报播放程序的 ICON
+
+![picture 6](/articles/a44b90224298f1266e2d1624e9d426348eab98373b136eec353a39a798ae5486.png)  
 
 开启后，客户端上报的播放程序图标会被保存，并优先显示在音乐行左侧。
 
@@ -71,10 +80,12 @@ sidebar_position: 4
 
 ### 显示 NCM 歌曲链接
 
+![picture 7](/articles/ab4fc85272455da48eb921eaaa8d265dfcb8a4458216994bf56c49b1c5cb9d5d.png)  
+
+
 开启后，如果活动上报里带有类似 `NCM-{id}` 的流派信息，悬浮卡片中会显示跳转到 `music.163.com` 的链接。
 
-这个主要服务于网易云音乐相关的上报场景。  
-如果你的客户端不会上报 NCM 信息，开了也基本没变化。
+这个主要服务于网易云音乐相关的上报场景，基于 BetterNCM 的 [inflink-rs](https://github.com/apoint123/inflink-rs/), 这是一个很好的项目，点个star吧
 
 ### 每设备最大封面图数量
 
@@ -89,6 +100,9 @@ sidebar_position: 4
 :::
 
 ### 不显示随想录
+
+![picture 8](/articles/9abcdc131121103d2ff2741e856936eb6ea4c0bdfc79b5022a62637893c9ecd7.png)  
+
 
 开启后，首页不再显示随想录区块。
 
@@ -116,6 +130,9 @@ sidebar_position: 4
 例如选择中国标准时间后，公开页里的绝对时间和课表日期计算都会按 GMT+8 处理。
 
 ## 状态卡片外部调用
+
+![picture 9](/articles/430c8de05a062d5c6f41d544f72ca77377be28d4626ad5be6a9dacb955560c99.png)  
+
 
 状态卡片用于生成一个可放进 `<img>` 的 SVG 地址，一般可以放到 README、个人主页、签名档或其他支持图片外链的位置。
 
@@ -173,14 +190,29 @@ sidebar_position: 4
 
 目前有：
 
+![picture 11](/articles/e7e78f491a0633f7048d1113cd31102987a8a7c2f0784ab2d8f3d1b8d9acb495.png)  
+
 - Aurora 光晕卡
+
+![picture 13](/articles/534dee5042a9806d8405ce2716b9cf61f2b973c7ab9b9080ad8278f34114449c.png)  
+
 - Cover 头图卡
+
+![picture 12](/articles/8b3eaa6e0d11103829994e28bcc12cbee1ddca3bea82f5db43b204c56ae0278e.png)  
+
 - Signature 签名卡
+
+![picture 10](/articles/47edbe3943084f9341181ec9e05341d3d5039dabde1afee0d8942ba31b24b86f.png)  
+
 - Classic 经典卡
 
 切换风格后，状态卡片的布局、背景使用方式和默认尺寸可能会变化。
 
 ### Tag 标签
+
+:::tip
+只用于 Signature 签名卡。
+:::
 
 用于在状态卡片上显示一个短标签，例如 `#Magician`。
 
@@ -188,14 +220,18 @@ sidebar_position: 4
 
 ### 背景图 Hash
 
+:::tip
 只用于 Signature 签名卡。
+:::
 
 上传背景图后会自动填入，也可以手动粘贴 `image-src` hash。  
 复制出的 URL 只包含 hash，不会直接暴露原始图片地址。
 
 ### 头图 Hash
 
+:::tip
 只用于 Cover 头图卡。
+:::
 
 上传后会作为状态卡片顶部头图使用。  
 和背景图一样，外部 URL 里只携带 hash。
@@ -356,6 +392,150 @@ Code.exe -> 正在编码
 ```
 
 这样前台就不会直接显示完整窗口标题，而是显示你配置过的文案。
+
+#### 匹配顺序
+
+应用规则分两层：
+
+1. 顶层先按 `processName` 匹配应用 / 进程名
+2. 命中应用后，再用标题子规则匹配 `processTitle`
+3. 标题子规则从上到下检查，第一条命中就使用这一条的展示文案
+4. 如果没有标题子规则命中，就使用该应用分组的默认文案
+
+`processName` 是不区分大小写的包含匹配。  
+比如规则写 `code.exe`，上报的进程名是 `Code.exe` 也会命中。
+
+#### 纯文本模式
+
+纯文本模式用于判断窗口标题里是否包含某段文字。
+
+例如：
+
+```text
+标题条件：app/page.tsx
+展示文案：正在写前台页面
+```
+
+如果窗口标题是：
+
+```text
+app/page.tsx - waken-wa - Visual Studio Code
+```
+
+就会命中这条规则。
+
+纯文本模式同样忽略大小写。
+
+#### Regex 模式
+
+Regex 模式用于用正则表达式匹配窗口标题。
+
+这里匹配的是 **窗口标题 `processTitle`**，不是进程名。  
+正则会以不区分大小写的方式执行，相当于使用 `i` 标记。
+
+例如你想匹配所有正在编辑 `.tsx` 文件的 VS Code 窗口，可以这样写：
+
+```text
+应用/进程名：Code.exe
+标题条件：\.tsx\b
+展示文案：正在写前端
+```
+
+如果窗口标题是：
+
+```text
+runtime.tsx - waken-wa - Visual Studio Code
+```
+
+就会显示为：
+
+```text
+正在写前端
+```
+
+:::tip
+正则里 `.` 表示任意字符。  
+如果你想匹配真正的点号，比如 `.tsx`，需要写成 `\.tsx`。
+:::
+
+#### Regex 捕获组
+
+Regex 模式命中后，展示文案可以使用捕获到的内容。
+
+可用变量：
+
+- `{process}`：进程名
+- `{title}`：窗口标题
+- `{match}`：正则完整命中的内容
+- `{match1}`：第 1 个捕获组
+- `{match2}`：第 2 个捕获组
+- `{match:name}`：命名捕获组
+
+例如：
+
+```text
+标题条件：(.+?) - Visual Studio Code
+展示文案：正在编辑：{match1}
+```
+
+窗口标题：
+
+```text
+runtime.md - Visual Studio Code
+```
+
+显示结果：
+
+```text
+正在编辑：runtime.md
+```
+
+也可以用命名捕获：
+
+```text
+标题条件：(?<file>.+?) - Visual Studio Code
+展示文案：正在编辑：{match:file}
+```
+
+效果和 `{match1}` 类似，只是可读性更好。
+
+:::warning
+如果该应用同时启用了「仅显示应用名」，那么 `{title}` 会是空的。  
+这种情况下，标题子规则也可能没有你预期的效果。
+:::
+
+#### 常见写法
+
+匹配某类文件：
+
+```text
+\.md\b
+\.tsx\b
+\.vue\b
+```
+
+匹配标题结尾：
+
+```text
+\.md$
+```
+
+提取浏览器页面标题：
+
+```text
+(.+?) - Google Chrome
+```
+
+提取 VS Code 当前文件名：
+
+```text
+(?<file>.+?) - Visual Studio Code
+```
+
+:::warning
+正则写错时，保存时会提示无效 Regex。  
+如果不熟悉正则，建议先用纯文本模式；需要提取标题内容时，再使用 Regex。
+:::
 
 ### 保存上报行为的应用记录
 
