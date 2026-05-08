@@ -1,0 +1,9 @@
+{
+  "label": "部署与运维",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "title": "部署与运维",
+    "description": "面向部署、迁移、维护和排障的文档。"
+  }
+}
