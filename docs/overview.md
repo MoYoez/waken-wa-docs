@@ -14,16 +14,20 @@ sidebar_position: 2
 
 ![picture 1](/articles/b9663973f98d26170fc5461f5386c26a0eb2d47eb4f209bff29cfbca1b9bf8d7.png)  
 
-- 如果用户屏蔽了 Cookie，此机制应当会失效
+:::info
+如果用户屏蔽了 Cookie，此机制应当会失效
+:::
 
 ## 快速添加活动
 
-这个项目分为 Realtime 活动和 active 活动。
+这个项目分为 realtime 活动和 active 活动。
 
-- Realtime 活动 代指：用户实时且在线的活动
+- realtime 活动 代指：用户实时且在线的活动
 - active 活动 代指：用户长期可持续的活动
 
-> 请注意，Active 活动是可以被 Realtime 实时活动所覆盖，Realtime 活动理论上应当是最高优先级
+:::warning
+请注意，Active 活动是可以被 Realtime 实时活动所覆盖，Realtime 活动理论上应当是最高优先级
+:::
 
 其中快速活动作为 Active 活动，被用户添加。
 
@@ -46,7 +50,7 @@ sidebar_position: 2
 
 ## 最近活动
 
-一般是展示最近的五条活动，如果是本身是 Active 属性的 活动，可以在此处被 提前结束
+一般是展示最近的 20 条活动 (Version 0.70+，旧版本 5 条)，如果是本身是 active 属性的 活动，可以在此处被 提前结束
 
 ![picture 4](/articles/cb4f5cd448a8746579743d463a8341b7f92ed49d95315243bd1f5407b0907f87.png)  
 

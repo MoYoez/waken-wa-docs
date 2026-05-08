@@ -32,7 +32,9 @@ toc_max_heading_level: 4
 
 按照最小的原则，首先你需要配置 管理员信息，这是用来作为您以后登录的凭证，可千万不能给坏人了哦xwx，不然就被看光光了！坏欸！/(*/ω＼*)
 
+:::tip
 尽量设置一个复杂的密码哦，当然你要能记住，不要太简单的 123456 和 password 了啦！这边的小工具可不会就这样随便通过你的密码！
+:::
 
 ### 首页资料
 
@@ -73,10 +75,11 @@ toc_max_heading_level: 4
 
 ![picture 11](/articles/aa3e03323f648994ceba8fd8eaffa56b6e84eb589d8f8714733993be61c721ac.png)  
 
-> 检测到远程头像 URL，是否允许通过服务器获取头像？
+:::tip
+- 检测到远程头像 URL，是否允许通过服务器获取头像？
 
-> 此功能是为了 防止一部分用户无法访问到远程头像地址 (e.g. 中国大陆无法访问到 Gravatar 的 头像服务，可以通过此进行绕过)
-
+此功能是为了 防止一部分用户无法访问到远程头像地址 (e.g. 中国大陆无法访问到 Gravatar 的 头像服务，可以通过此进行绕过)
+:::
 
 #### 其他配置
 
@@ -126,9 +129,11 @@ toc_max_heading_level: 4
 
 我们这里就以 Windows 平台为例，开始做剩余的配置：
 
-> 对了 如果你是 MacOS，第一次应用会碰到损坏, 在 终端执行 sudo xattr -c ,将程序拖进去终端补全路径即可
+:::tip
+如果你是 MacOS，第一次应用会碰到损坏, 在 终端执行 sudo xattr -c ,将程序拖进去终端补全路径即可
 
-> 如果您是第一次配置，可能默认为英文环境，需要通过 Maybe Later -> Setting 修改语言后重启
+如果您是第一次配置，可能默认为英文环境，需要通过 Maybe Later -> Setting 修改语言后重启
+:::
 
 ![picture 17](/articles/74e194d5946b44377e4c5f399457162c2fb8444173c45298b2414c69d28cea8e.png)  
 
@@ -167,9 +172,15 @@ Token 名称填写你能记住的即可
 
 #### MacOS
 
-对于 MacOS 来说，标题部分获取 需要通过 [axuielement_h](https://developer.apple.com/documentation/applicationservices/axuielement_h) 获取 程式的 标题，这部分涉及到辅助功能，我们需要点击获取辅助功能授权，否则大部分程序都无法获取标题
+对于 MacOS 来说，标题部分获取 需要通过 [axuielement_h](https://developer.apple.com/documentation/applicationservices/axuielement_h) 获取 程式的 标题，这部分涉及到辅助功能，**我们需要点击获取辅助功能授权，否则大部分程序都无法获取标题**
 
-其次对于 MacOS，音频的获取需要依赖 私有 API，这里我们通过了 [Nowplaying-Cli](https://github.com/kirtan-shah/nowplaying-cli) 来获取，请先通过 Brew 进行安装
+> v0.60+ 使用了 Bridge 去调用OJBC，方案是 [mediaremote-adapter](https://github.com/ungive/mediaremote-adapter) ，会有 Break Change，如果需要考虑一定的安全性，可以访问他们的项目查看可能存在的问题
+
+:::warning
+
+v0.60 以下，需要安装 nowplaying-cli 用以获取歌曲信息
+:::
+
 
 一般来说经过这些操作，大部分都是 OK 了。
 
