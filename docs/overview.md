@@ -49,3 +49,9 @@ sidebar_position: 2
 一般是展示最近的五条活动，如果是本身是 Active 属性的 活动，可以在此处被 提前结束
 
 ![picture 4](/articles/cb4f5cd448a8746579743d463a8341b7f92ed49d95315243bd1f5407b0907f87.png)  
+
+### API
+
+* 请开启 后台的 API 开放 OpenAPI 文档后，访问此路由查看
+
+api-reference#tag/device/POST/api/activity
