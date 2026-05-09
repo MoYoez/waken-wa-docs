@@ -1,6 +1,7 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import Translate, {translate} from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
@@ -15,16 +16,28 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <img className={styles.heroLogo} src={logoUrl} alt="Waken-Wa Logo" />
-        <p className={styles.eyebrow}>Waken-Wa Docs</p>
+        <p className={styles.eyebrow}>
+          <Translate id="homepage.eyebrow" description="Homepage eyebrow">
+            Waken-Wa 文档
+          </Translate>
+        </p>
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          <Translate
+            id="homepage.tagline"
+            description="Homepage subtitle for the Waken-Wa documentation site">
+            Waken-Wa 使用文档与配置指南
+          </Translate>
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/get-start/start">
-            Let's Roll With Magic✨
+            <Translate id="homepage.cta" description="Homepage call to action">
+              进入文档
+            </Translate>
           </Link>
         </div>
       </div>
@@ -37,7 +50,11 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={siteConfig.title}
-      description="Waken-Wa 使用文档站点">
+      description={translate({
+        id: 'homepage.description',
+        message: 'Waken-Wa 使用文档与配置指南',
+        description: 'Homepage meta description',
+      })}>
       <HomepageHeader />
       <main />
     </Layout>

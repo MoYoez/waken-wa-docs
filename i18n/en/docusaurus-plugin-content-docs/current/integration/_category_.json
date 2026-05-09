@@ -1,0 +1,9 @@
+{
+  "label": "Integration",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "title": "Integration",
+    "description": "Docs for reporters, scripts, and external system integrations."
+  }
+}

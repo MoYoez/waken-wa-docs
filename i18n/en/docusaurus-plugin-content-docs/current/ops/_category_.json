@@ -1,0 +1,9 @@
+{
+  "label": "Operations",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "title": "Operations",
+    "description": "Docs for deployment, migration, maintenance, and troubleshooting."
+  }
+}

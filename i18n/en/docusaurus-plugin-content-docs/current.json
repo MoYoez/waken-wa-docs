@@ -1,0 +1,66 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.✨ 快速上手": {
+    "message": "✨ Quick Start",
+    "description": "The label for category '✨ 快速上手' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.⚙️ 网站设置": {
+    "message": "⚙️ Site Settings",
+    "description": "The label for category '⚙️ 网站设置' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.⚙️ 网站设置.link.generated-index.title": {
+    "message": "Site Settings",
+    "description": "The generated-index page title for category '⚙️ 网站设置' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.⚙️ 网站设置.link.generated-index.description": {
+    "message": "Site configuration organized around the real Basic and Advanced tabs in Waken-wa-web.",
+    "description": "The generated-index page description for category '⚙️ 网站设置' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.基础": {
+    "message": "Basic",
+    "description": "The label for category '基础' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.基础.link.generated-index.title": {
+    "message": "Basic",
+    "description": "The generated-index page title for category '基础' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.基础.link.generated-index.description": {
+    "message": "Matches the Basic tab in the admin settings page.",
+    "description": "The generated-index page description for category '基础' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.进阶": {
+    "message": "Advanced",
+    "description": "The label for category '进阶' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.进阶.link.generated-index.title": {
+    "message": "Advanced",
+    "description": "The generated-index page title for category '进阶' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.进阶.link.generated-index.description": {
+    "message": "Matches the Advanced tab in the admin settings page.",
+    "description": "The generated-index page description for category '进阶' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.doc.网页配置": {
+    "message": "Page Settings",
+    "description": "The label for the doc item '网页配置' in sidebar 'docsSidebar', linking to the doc site-settings/basic"
+  },
+  "sidebar.docsSidebar.doc.平台与访问": {
+    "message": "Platform & Access",
+    "description": "The label for the doc item '平台与访问' in sidebar 'docsSidebar', linking to the doc site-settings/platform"
+  },
+  "sidebar.docsSidebar.doc.前台展示": {
+    "message": "Frontend Display",
+    "description": "The label for the doc item '前台展示' in sidebar 'docsSidebar', linking to the doc site-settings/frontend"
+  },
+  "sidebar.docsSidebar.doc.运行时行为": {
+    "message": "Runtime Behavior",
+    "description": "The label for the doc item '运行时行为' in sidebar 'docsSidebar', linking to the doc site-settings/runtime"
+  },
+  "sidebar.docsSidebar.doc.导入与导出": {
+    "message": "Import & Export",
+    "description": "The label for the doc item '导入与导出' in sidebar 'docsSidebar', linking to the doc site-settings/import-export"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "⚙️ Site Settings",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "title": "Site Settings",
+    "description": "Site configuration organized around the real Basic and Advanced tabs in Waken-wa-web."
+  }
+}
