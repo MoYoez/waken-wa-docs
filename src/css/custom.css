@@ -22,3 +22,8 @@
   color: var(--ifm-color-primary-darkest);
   font-weight: 800;
 }
+
+
+.theme-layout-footer {
+  display:none;
+}
